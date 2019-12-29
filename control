@@ -1,9 +1,12 @@
 Package: com.devvix.nocshare
 Name: NoCShare
 Depends: mobilesubstrate
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm
 Description: Remove annoying airdrop and contacts from share menu.
 Maintainer: Devvix
 Author: Devvix
 Section: Tweaks
+Icon: https://repo.devvix.com/assets/TweakIcons/nocshareicon.jpg
+Depiction: https://repo.devvix.com/depictions/?p=com.devvix.nocshare
+SileoDepiction: https://repo.devvix.com/sileodepictions/com.devvix.nocshare/depiction.json
