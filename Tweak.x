@@ -1,5 +1,4 @@
 @interface UIActivityContentViewController
-//- (void) setAirDropSlots:(NSArray*)arg1;
 - (void) updateContentWithPeopleProxies:(id)arg1 shareProxies:(id)arg2 actionProxies:(id)arg3 activitiesByUUID:(id)arg4 nearbyCountSlotID:(id)arg5 animated:(BOOL)arg6;
 @end
 
@@ -18,10 +17,6 @@
 
 
 %hook UIActivityContentViewController
-/*- (void) setAirDropSlots:(NSArray*)arg1 {
-	NSLog(@"NOCSHARE - Prevented AirDropSlots!");
-	//Do nothing
-}*/
 
 - (void) updateContentWithPeopleProxies:(NSArray*)arg1 shareProxies:(NSArray*)arg2 actionProxies:(NSArray*)arg3 activitiesByUUID:(NSMutableDictionary*)arg4 nearbyCountSlotID:(id)arg5 animated:(BOOL)arg6 {
 	%orig([NSMutableArray new], arg2, arg3, arg4, arg5, arg6);
